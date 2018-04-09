@@ -10,11 +10,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Ayuda</title>
-         <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div id="content-app">
-        <h1>Ayuda</h1>
+        <jsp:include page="header.jsp" flush="true" />
         <h3>Movimientos</h3>
         <p>En la pestaña movientos se encuentra toda la informacion relativa a los movientos del cliente logeado en este momento,
            se dispone de dos filtrados generales, uno para gastos y otro para ingresos; tambien se dispone de un cuadro de busqueda
