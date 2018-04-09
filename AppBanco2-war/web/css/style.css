@@ -5,10 +5,10 @@ and open the template in the editor.
 */
 /* 
     Created on : 06-abr-2018, 11:51:04
-    Author     : user
+    Author     : Víctor Manuel Ortiz Guardeño
 */
 
-/* Estilo general */
+/* GENERAL */
 body {
     background-color:   #E5E8E8;
     font-family: 'Source Sans Pro', sans-serif;
@@ -18,12 +18,46 @@ h1,h2,h3,h4,h5,h6 {
     color: #1B2631;
 }
 
+hr {
+    margin-bottom: 20px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.button{
+    float: right;
+    margin-left: 10px;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: white;
+    border-style: solid;
+    border-color: #1B2631;
+    border-width: 1px;
+    border-radius: 3px;
+    background-color: #1B2631;
+    padding: 8px 15px 8px 15px;
+}
+
+.active{
+    background-color: #2874A6;
+    color: white;
+    border-color: #1B4F72;
+}
+/* FORMULARIO */
+
 form p span{
     display: inline-block;
     width: 100px;
+    margin-left: 35px;
+    
 }
 
-input[type=text], input[type=email], input[type=number] {
+input[type=text], input[type=email], input[type=number], input[type=password] {
     padding: 4px 5px 4px 5px;
 }
 
@@ -57,14 +91,12 @@ form h1 {
     text-align: center;
 }
 
-hr {
-    margin-bottom: 20px;
-}
-
 form .form-button-right input {
     float: right;
     margin-left: 10px;
 }
+
+/* ESTRUCTURA DE LA WEB */
 
 #content-app {
     width: 960px;
@@ -132,6 +164,8 @@ form .form-button-right input {
     position: relative;
 }
 
+/* TABLAS */
+
 table {
     border-style: solid;
     border-color: #838383;
@@ -152,19 +186,6 @@ tr {
 
 tr:nth-child(odd) {
     background-color: #E5E8E8;
-}
-
-/* MOV CLIENTE */
-#mov table {
-    width: 100%;
-}
-
-#search form {
-    width: 100%;
-}
-
-#search form input:first-child {
-    width: 65%;
 }
 
 /* SLIDER */
@@ -239,23 +260,4 @@ tr:nth-child(odd) {
 
 .slider .round:before {
     border-radius: 50%;
-}
-
-/* LOGIN */
-
-.login{
-    box-shadow: 1px 1px 15px #838383;
-    width: 500px;
-    margin: 100px auto auto auto;
-    border-radius: 15px;
-    background-color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.login h1{
-    text-align: center;
-}
-.login button{
-    margin-left: 200px;
-    size: 200;
 }

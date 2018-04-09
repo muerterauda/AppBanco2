@@ -14,12 +14,18 @@
         <title>Login Cliente</title>
     </head>
     <body>
-    <div class="login">
-        <h1>BANCO NO CORRUPTO</h1>
+    <div id="content-app-medium">
+
            <form method="post" action="" name="datos" accept-charset="UTF-8">
-               <p><span>DNI: </span><input name="dni"></p>
-               <p><span>Contraseña: </span><input name="password"></p>
-            <button>Enviar</button>
+               <h1>Banco no corrupto</h1>
+               <hr />
+               <p><span>DNI: </span><input type="text" name="dni"></p>
+               <p><span>Contraseña: </span><input type="password" name="password"></p>
+               <hr />               
+               <div class="form-button-right">
+                   <input type="submit" value="Entrar" />
+                   <div style="clear:both"></div>
+               </div>
            </form>
     </div>
     </body>
