@@ -3,7 +3,6 @@
     Created on : 06-abr-2018, 11:19:00
     Author     : user
 --%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html
@@ -14,21 +13,7 @@
     </head>
     <body>
         <div id="content-app">
-            <div id="header">
-                <div id="header-left">
-                    <div id="nav-left">
-                        <a href="movimientosCliente.jsp">Movimientos</a>
-                        <a href="traspaso.jsp">Transpasos</a>
-                        <a href="ayuda.jsp">Ayuda</a>
-                    </div>
-                </div>
-                <div id="header-center">
-                    <h2>Movimientos</h2>
-                </div>
-                <div id="header-rigth">
-                    <a href="loginCliente.jsp">Cerrar sesión</a>
-                </div>
-            </div>
+            <jsp:include page="header.jsp" flush="true" />
             <div id="content">
                 <div id="content-header">
                     Funanito Cojo per majo
