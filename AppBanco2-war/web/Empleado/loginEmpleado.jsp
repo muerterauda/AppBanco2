@@ -16,12 +16,17 @@
         <title> Login Empleado </title>
 
 
-        <div class="login" >
+        <div id="content-app-medium" >
             <form action="loginEmpleadoServlet" method="post">
                 <h1 >Acceso Autorizado</h1>
-                <p><span>Numero Empleado: </span><input type="text" name="numeroEmpleado" > </p>
-                <p><span> Contraseña: </span><input type="text" name="password"></h4> </p>
-                <p><input type="submit" title="Entrar"> </p>
+                <hr />
+                <p><span>Empleado : </span><input type="text" name="numeroEmpleado" > </p>
+                <p><span> Contraseña : </span><input type="text" name="password"></h4> </p>
+                <hr />
+                <div class="form-button-right">
+                    <input type="submit" title="Entrar"> 
+                    <div style="clear:both;"></div>
+                </div>
             </form>
         </div>
 

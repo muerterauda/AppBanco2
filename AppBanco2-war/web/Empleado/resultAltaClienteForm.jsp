@@ -13,11 +13,15 @@
         <title>Confirmación</title>
     </head>
     <body>
-        <div id="content-app">
-            El usuario ha sido creado con éxito.
-            <br>
-            <input type="button" value="Página principal">
-            <input type="button" value="Ir a apuntes">
+        <div id="content-app-medium">
+            <p>
+                El usuario ha sido creado con éxito.
+            </p>
+            <div class="form-button-right">
+                <a class="button active" href="apuntesEmpleado.jsp">Ir a apuntes</a>
+                <a class="button active" href="principalEmpleado.jsp">Home</a>  
+                <div style="clear: both;"></div>
+            </div>
         </div>
     </body>
 </html>

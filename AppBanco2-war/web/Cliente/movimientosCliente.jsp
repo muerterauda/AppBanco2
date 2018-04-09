@@ -19,7 +19,7 @@
                     Funanito Cojo per majo
                 </div>
                 <div id="content-main">
-                    <table>
+                    <table class="full-width">
                         <tr>
                             <th>
                                 Concepto
