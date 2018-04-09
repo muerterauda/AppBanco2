@@ -14,7 +14,9 @@
     </head>
      <body>
         <div id="content-app">
-            <jsp:include page="header.jsp" flush="true" />
+            <jsp:include page="header.jsp" flush="true">
+                <jsp:param name="title" value="Transferencia" />
+            </jsp:include>
         </div>
     </body>
 </html>
