@@ -7,7 +7,7 @@
  * Author:  user
  * Created: 09-abr-2018
  */
-CREATE TABLE Cliente{
+CREATE TABLE Cliente (
     DNI VARCHAR(9) NOT NULL,
     Nombre VARCHAR(30) NOT NULL,
     Apellidos VARCHAR(75) NOT NULL,
@@ -16,16 +16,31 @@ CREATE TABLE Cliente{
     Telefono VARCHAR(75) NOT NULL,
     Contrasenya VARCHAR(75) NOT NULL,
     PRIMARY KEY(DNI)
-} ENGINE=InnoDB;
+) ENGINE=InnoDB;
 
-CREATE TABLE Cuenta{
+CREATE TABLE Cuenta(
     NumeroCuenta VARCHAR(24) NOT NULL,
     DniUsuario VARCHAR(9) NOT NULL,
     FOREIGN KEY(DniUsuario) REFERENCES Cliente(DNI),
     PRIMARY KEY(NumeroCuenta)
-}   ENGINE=InnoDB;
+)   ENGINE=InnoDB;
 
-CREATE TABLE Movimiento{
+CREATE TABLE Empleado(
+    IdEmpleado INT NOT NULL,
+    Contrasenya VARCHAR(75) NOT NULL,
+    PRIMARY KEY(IdEmpleado)
+)   ENGINE=InnoDB;
+
+CREATE TABLE Operacion(
+    IdOperacion INT NOT NULL AUTO_INCREMENT,
+    IdEmpleadoOperacion INT,
+    Tipo VARCHAR(30) NOT NULL,
+    FOREIGN KEY(IdEmpleadoOperacion) REFERENCES Empleado(IdEmpleado),
+    PRIMARY KEY(IdOperacion)
+)   ENGINE=InnoDB;
+
+
+CREATE TABLE Movimiento(
     IdMovimiento INT NOT NULL AUTO_INCREMENT,
     NumeroCuentaMovimiento VARCHAR(24) NOT NULL,
     IdOperacionMovimiento INT NOT NULL,
@@ -36,18 +51,4 @@ CREATE TABLE Movimiento{
     FOREIGN KEY(IdOperacionMovimiento) REFERENCES Operacion(IdOperacion),
     FOREIGN KEY(NumeroCuentaMovimiento) REFERENCES Cuenta(NumeroCuenta),
     PRIMARY KEY(IdMovimiento)
-}   ENGINE=InnoDB;
-
-CREATE TABLE Operacion{
-    IdOperacion INT NOT NULL AUTO_INCREMENT,
-    IdEmpleadoOperacion INT,
-    Tipo VARCHAR(30) NOT NULL,
-    FOREIGN KEY(IdEmpleadoOperacion) REFERENCES Empleado(IdEmpleado)
-    PRIMARY KEY(IdOperacion)
-}   ENGINE=InnoDB;
-
-CREATE TABLE Empleado{
-    IdEmpleado INT NOT NULL,
-    Contrasenya VARCHAR(75) NOT NULL,
-    PRIMARY KEY(IdEmpleado)
-}   ENGINE=InnoDB;
+)   ENGINE=InnoDB;
