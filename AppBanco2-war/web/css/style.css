@@ -1,0 +1,261 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06-abr-2018, 11:51:04
+    Author     : user
+*/
+
+/* Estilo general */
+body {
+    background-color:   #E5E8E8;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: #1B2631;
+}
+
+form p span{
+    display: inline-block;
+    width: 100px;
+}
+
+input[type=text], input[type=email], input[type=number] {
+    padding: 4px 5px 4px 5px;
+}
+
+input[type=button], input[type=submit] {
+    padding: 8px 15px 8px 15px;
+    background-color: #1B2631;
+    color: white;
+    border-style: solid;
+    border-color: #1B2631;
+    border-width: 1px;
+    border-radius: 3px;
+}
+
+input[type=submit]{
+    background-color: #2874A6;
+    color: white;
+    border-color: #1B4F72;
+}
+
+input[type=submit]:active{
+    background-color: #1B4F72;
+    color: white;
+}
+
+input[type=button]:active{
+    background-color: black;
+    color: white;
+}
+
+form h1 {
+    text-align: center;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+form .form-button-right input {
+    float: right;
+    margin-left: 10px;
+}
+
+#content-app {
+    width: 960px;
+    background-color: white;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px 20px 30px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #838383;
+    position: relative;
+}
+
+#content-app-medium {
+    width: 480px;
+    background-color: white;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px 20px 30px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #838383;
+    position: relative;
+}
+
+#header {
+    display: block;
+}
+
+#header-center, #header-left, #header-rigth {
+    width: 320px;
+    height: 100%;
+    display: inline-block;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+}
+
+#header-center {
+    margin-left: -3px;
+    text-align: center;
+}
+
+#header-left {
+}
+
+#header-rigth {
+    margin-left: -6px;
+    text-align: right;
+}
+
+#content {
+    width: 100%;
+}
+
+#content-main {
+    width: 640px;
+    float: left;
+}
+
+#content-side {
+    width: 278px;
+    float: left;
+    padding: 0px 20px 0px 20px;
+    position: relative;
+}
+
+table {
+    border-style: solid;
+    border-color: #838383;
+    border-width: 1px;
+    padding: 10px 5px 10px 5px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th,td {
+    padding: 3px 5px 3px 5px;
+}
+
+tr {
+    border-style: solid;
+    border-width: 1px;
+}
+
+tr:nth-child(odd) {
+    background-color: #E5E8E8;
+}
+
+/* MOV CLIENTE */
+#mov table {
+    width: 100%;
+}
+
+#search form {
+    width: 100%;
+}
+
+#search form input:first-child {
+    width: 65%;
+}
+
+/* SLIDER */
+
+.checkbox-rounded {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-rounded p {
+    text-align: left;
+    margin-left: 10px;
+    width: 160px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 35px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.switch input:checked + .slider {
+    background-color: #2196F3;
+}
+
+.switch input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+.switch input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider .round {
+    border-radius: 34px;
+}
+
+.slider .round:before {
+    border-radius: 50%;
+}
+
+/* LOGIN */
+
+.login{
+    box-shadow: 1px 1px 15px #838383;
+    width: 500px;
+    margin: 100px auto auto auto;
+    border-radius: 15px;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.login h1{
+    text-align: center;
+}
+.login button{
+    margin-left: 200px;
+    size: 200;
+}
