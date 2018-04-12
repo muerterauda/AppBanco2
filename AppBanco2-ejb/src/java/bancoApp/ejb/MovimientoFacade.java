@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package banco.ejb;
+package bancoApp.ejb;
 
-import banco.entity.Movimiento;
+import bancoApp.entity.Movimiento;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

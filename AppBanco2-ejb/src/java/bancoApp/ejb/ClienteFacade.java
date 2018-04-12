@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package banco.ejb;
+package bancoApp.ejb;
 
-import banco.entity.Empleado;
+import bancoApp.entity.Cliente;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -15,7 +15,7 @@ import javax.persistence.PersistenceContext;
  * @author user
  */
 @Stateless
-public class EmpleadoFacade extends AbstractFacade<Empleado> {
+public class ClienteFacade extends AbstractFacade<Cliente> {
 
     @PersistenceContext(unitName = "AppBanco2-ejbPU")
     private EntityManager em;
@@ -25,8 +25,8 @@ public class EmpleadoFacade extends AbstractFacade<Empleado> {
         return em;
     }
 
-    public EmpleadoFacade() {
-        super(Empleado.class);
+    public ClienteFacade() {
+        super(Cliente.class);
     }
     
 }
