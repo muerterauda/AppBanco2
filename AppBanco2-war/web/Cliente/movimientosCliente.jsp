@@ -13,7 +13,9 @@
     </head>
     <body>
         <div id="content-app">
-            <jsp:include page="header.jsp" flush="true" />
+            <jsp:include page="header.jsp" flush="true">
+                <jsp:param name="title" value="Movimientos" />
+            </jsp:include>
             <div id="content">
                 <div id="content-header">
                     Funanito Cojo per majo

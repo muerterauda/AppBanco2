@@ -1,8 +1,4 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
+
 /* 
     Created on : 06-abr-2018, 11:51:04
     Author     : Víctor Manuel Ortiz Guardeño
@@ -10,7 +6,7 @@ and open the template in the editor.
 
 /* GENERAL */
 body {
-    background-color:   #E5E8E8;
+    background-color:   #313144;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -235,7 +231,7 @@ tr:nth-child(odd) {
 }
 
 .switch input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #2874A6;
 }
 
 .switch input:focus + .slider {

@@ -5,6 +5,7 @@
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<<<<<<< HEAD
         <div id="nav">
                     <div id="navegador">
                     <ul>
@@ -15,4 +16,20 @@
                     </ul>
                         <div style="clear:both"></div>
                     </div>
+=======
+<div id="header">
+    <div id="header-left">
+        <div id="nav-left">
+            <a href="movimientosCliente.jsp">Movimientos</a>
+            <a href="traspaso.jsp" >Transpasos</a>
+            <a href="ayuda.jsp">Ayuda</a>
+>>>>>>> originn/master
         </div>
+    </div>
+    <div id="header-center">
+        <h2><%= request.getParameter("title")%></h2>
+    </div>
+    <div id="header-rigth">
+        <a href="loginCliente.jsp">Cerrar sesión</a>
+    </div>
+</div>
