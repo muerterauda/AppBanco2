@@ -5,10 +5,13 @@
  */
 package modelo;
 
+import banco.entity.Empleado;
+
 /**
  *
- * @author user
+ * @author Juan José Guerrero Ruiz
  */
 public class EmpleadoAdapter {
     
+    private Empleado empleadoDAO;
 }
