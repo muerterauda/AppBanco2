@@ -7,48 +7,48 @@
  * Author:  user
  * Created: 09-abr-2018
  */
-CREATE TABLE Cliente (
-    DNI VARCHAR(9) NOT NULL,
-    Nombre VARCHAR(30) NOT NULL,
-    Apellidos VARCHAR(75) NOT NULL,
-    Direccion VARCHAR(75) NOT NULL,
-    Email VARCHAR(75) NOT NULL,
-    Telefono VARCHAR(75) NOT NULL,
-    Contrasenya VARCHAR(75) NOT NULL,
-    PRIMARY KEY(DNI)
+CREATE TABLE CLIENTE (
+    dni VARCHAR(9) NOT NULL,
+    nombre VARCHAR(30) NOT NULL,
+    apellidos VARCHAR(75) NOT NULL,
+    direccion VARCHAR(75) NOT NULL,
+    email VARCHAR(75) NOT NULL,
+    telefono VARCHAR(75) NOT NULL,
+    contrasenya VARCHAR(75) NOT NULL,
+    PRIMARY KEY(dni)
 ) ENGINE=InnoDB;
 
-CREATE TABLE Cuenta(
-    NumeroCuenta VARCHAR(24) NOT NULL,
-    DniUsuario VARCHAR(9) NOT NULL,
-    FOREIGN KEY(DniUsuario) REFERENCES Cliente(DNI),
-    PRIMARY KEY(NumeroCuenta)
+CREATE TABLE CUENTA(
+    numeroCuenta VARCHAR(24) NOT NULL,
+    cliente VARCHAR(9) NOT NULL,
+    FOREIGN KEY(cliente) REFERENCES CLIENTE(dni),
+    PRIMARY KEY(numeroCuenta)
 )   ENGINE=InnoDB;
 
-CREATE TABLE Empleado(
-    IdEmpleado INT NOT NULL,
-    Contrasenya VARCHAR(75) NOT NULL,
-    PRIMARY KEY(IdEmpleado)
+CREATE TABLE EMPLEADO(
+    id INT NOT NULL,
+    contrasenya VARCHAR(75) NOT NULL,
+    PRIMARY KEY(id)
 )   ENGINE=InnoDB;
 
-CREATE TABLE Operacion(
-    IdOperacion INT NOT NULL AUTO_INCREMENT,
-    IdEmpleadoOperacion INT,
-    Tipo VARCHAR(30) NOT NULL,
-    FOREIGN KEY(IdEmpleadoOperacion) REFERENCES Empleado(IdEmpleado),
-    PRIMARY KEY(IdOperacion)
+CREATE TABLE OPERACION(
+    id INT NOT NULL AUTO_INCREMENT,
+    empleado INT,
+    tipo VARCHAR(30) NOT NULL,
+    FOREIGN KEY(empleado) REFERENCES EMPLEADO(id),
+    PRIMARY KEY(id)
 )   ENGINE=InnoDB;
 
 
-CREATE TABLE Movimiento(
-    IdMovimiento INT NOT NULL AUTO_INCREMENT,
-    NumeroCuentaMovimiento VARCHAR(24) NOT NULL,
-    IdOperacionMovimiento INT NOT NULL,
-    Concepto VARCHAR(30) NOT NULL,
-    Fecha DATETIME NOT NULL,
-    Importe INT NOT NULL,
-    Saldo INT NOT NULL,
-    FOREIGN KEY(IdOperacionMovimiento) REFERENCES Operacion(IdOperacion),
-    FOREIGN KEY(NumeroCuentaMovimiento) REFERENCES Cuenta(NumeroCuenta),
-    PRIMARY KEY(IdMovimiento)
+CREATE TABLE MOVIMIENTO(
+    id INT NOT NULL AUTO_INCREMENT,
+    cuenta VARCHAR(24) NOT NULL,
+    operacion INT NOT NULL,
+    concepto VARCHAR(30) NOT NULL,
+    fecha DATETIME NOT NULL,
+    importe INT NOT NULL,
+    saldo INT NOT NULL,
+    FOREIGN KEY(operacion) REFERENCES OPERACION(id),
+    FOREIGN KEY(cuenta) REFERENCES CUENTA(numeroCuenta),
+    PRIMARY KEY(id)
 )   ENGINE=InnoDB;

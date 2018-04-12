@@ -104,57 +104,51 @@ form .form-button-right input {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px 30px 20px 30px;
+    padding: 17px 0px 20px 0px;
     border-radius: 5px;
     box-shadow: 3px 3px 3px #838383;
     position: relative;
 }
-
+#content-app p,h3 {
+    padding: 0px 30px 0px 0px;
+}
 #content-app-medium {
     width: 480px;
     background-color: white;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px 30px 20px 30px;
+    padding: 20px 10px 20px 10px;
     border-radius: 5px;
     box-shadow: 3px 3px 3px #838383;
     position: relative;
 }
 
-#header {
+#nav {
     display: block;
-}
-
-#header-center, #header-left, #header-rigth {
-    width: 320px;
     height: 100%;
     display: inline-block;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     position: relative;
-}
-
-#header-center {
-    margin-left: -3px;
-    text-align: center;
-}
-
-#header-left {
-}
-
-#header-rigth {
-    margin-left: -6px;
+    width: 960px;
     text-align: right;
 }
 
 #content {
     width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-
+#content-header{
+}
 #content-main {
     width: 640px;
     float: left;
+}
+
+#content-total{
+    width: 960px;
 }
 
 #content-side {
@@ -260,4 +254,41 @@ tr:nth-child(odd) {
 
 .slider .round:before {
     border-radius: 50%;
+}
+/* Barras */
+
+#navegador li {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+  margin-bottom: 30px;
+}
+#navegador li:last-child {
+  float: right;
+}
+#navegador ul {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+#navegador a {
+  color: white;
+  background-color: #1B2631;
+  border:2px solid #1B2631;
+  padding:1em;
+  text-decoration:none;
+}
+#navegador a:first-child{
+    
+}
+#navegador a:last-child{
+    
+}
+
+#navegador a:hover {
+  color: white;
+  background-color: #2874A6;
+  border:2px solid #2874A6;
+  text-decoration:underline; 
 }
