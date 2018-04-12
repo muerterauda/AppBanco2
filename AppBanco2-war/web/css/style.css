@@ -288,3 +288,68 @@ tr:nth-child(odd) {
   border:2px solid #2874A6;
   text-decoration:underline; 
 }
+/* LOGIN */
+
+.login{
+    box-shadow: 1px 1px 15px #838383;
+    width: 500px;
+    margin: 100px auto auto auto;
+    border-radius: 15px;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.login h1{
+    text-align: center;
+}
+.login button{
+    margin-left: 200px;
+    size: 200;
+}
+
+
+/*PaginaPrincipalEmpleado*/
+nav ul {
+    list-style: none; overflow: hidden; position: relative;
+}
+nav ul li { 
+    float: left; margin: 0 20px 0 0;
+}
+
+nav ul li a {
+    display: block; width: 240px; height: 240px;
+    
+    background-repeat: no-repeat;
+}
+
+nav ul li:nth-child(1) a {
+    background-color: #7b0dc6;
+    background-position: 0px 0px;
+    background-image: url(../icons/pen.png);
+    background-size: 240px;
+}
+
+nav ul li:nth-child(2) a {
+    background-color: #3385ff;
+    background-position: 0px 0px;
+    background-image: url(../icons/user.png);
+    background-size: 240px;
+}
+
+nav ul li:nth-child(3) a {
+    background-color: #ffcc00;
+    background-position: 0px 0px;
+    background-image: url(../icons/paperplane.png);
+    background-size: 240px;
+}
+
+nav ul li a span {
+	font: 50px "Dosis", sans-serif; text-transform: uppercase; 
+	position: absolute; left: 580px; top: 29px;
+	display: none;
+}
+
+div.botonApuntes{
+    
+    
+}
