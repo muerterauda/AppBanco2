@@ -9,12 +9,6 @@ package modelo;
  *
  * @author user
  */
-public class NumeroCuentaException extends RuntimeException{
-
-    public NumeroCuentaException() {
-        super();
-    }
-    public NumeroCuentaException(String mes) {
-        super(mes);
-    }
+public class Ingreso extends OperacionAutorizada{
+    
 }

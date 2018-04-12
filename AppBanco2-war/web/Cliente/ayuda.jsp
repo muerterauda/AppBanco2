@@ -14,14 +14,10 @@
     </head>
     <body>
         <div id="content-app">
-<<<<<<< HEAD
-        <jsp:include page="header.jsp" flush="true" />
-        <div id="content">
-=======
             <jsp:include page="header.jsp" flush="true">
                 <jsp:param name="title" value="Ayuda" />
             </jsp:include>
->>>>>>> originn/master
+        <div id="content">
         <h3>Movimientos</h3>
         <p>En la pestaña movientos se encuentra toda la informacion relativa a los movientos del cliente logeado en este momento,
            se dispone de dos filtrados generales, uno para gastos y otro para ingresos; tambien se dispone de un cuadro de busqueda

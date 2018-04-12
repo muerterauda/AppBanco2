@@ -9,12 +9,6 @@ package modelo;
  *
  * @author user
  */
-public class DNIException extends RuntimeException{
-
-    public DNIException() {
-        super();
-    }
-     public DNIException(String msg) {
-         super(msg);
-    }
+public class Reintegro extends OperacionAutorizada{
+    
 }
