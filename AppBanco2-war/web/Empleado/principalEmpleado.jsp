@@ -18,32 +18,24 @@
         <div id="content-app">
             
             
-            <nav>
-                <ul>
-                    <li> <h1> Apuntes</h1></li>
-                    <li> <h1> Alta de Usuario</h1></li>
-                    <li> <h1> Salir </h1> </li>
-                </ul>
-                
-                
-            </nav>
-               
             
-        <br/>   
         <div id="ppalEmpleado" class="ppalEmpleado">
             <nav>
                 <ul>
                     <li>
+                        <h1> Apuntes </h1>
                         <a href="operacionApunte.jsp">
                             <span>Apuntes</span>
                         </a>
                     </li>
                     <li>
+                        <h1> Alta de Usuarios</h1>
                         <a href="altaClienteForm.jsp">
                             <span>Alta de Usuarios</span>
                         </a>
                     </li>
                     <li>
+                        <h1> Salir </h1>
                         <a href="loginEmpleado.jsp">
                             <span>Salir</span>
                         </a>

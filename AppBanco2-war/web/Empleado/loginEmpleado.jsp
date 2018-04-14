@@ -16,7 +16,7 @@
         <title> Login Empleado </title>
 
 <div class="login" >
-            <form action="loginEmpleadoServlet" method="post">
+    <form action="principalEmpleado.jsp" method="post">
                 <h1 >Acceso Autorizado</h1>
                 <p><span>Numero Empleado: </span><input type="text" name="numeroEmpleado" > </p>
                 <p><span> Contraseña: </span><input type="text" name="password"></h4> </p>

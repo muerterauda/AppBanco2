@@ -314,6 +314,7 @@ nav ul {
 }
 nav ul li { 
     float: left; margin: 0 20px 0 0;
+    text-align: center;
 }
 
 nav ul li a {
@@ -347,9 +348,4 @@ nav ul li a span {
 	font: 50px "Dosis", sans-serif; text-transform: uppercase; 
 	position: absolute; left: 580px; top: 29px;
 	display: none;
-}
-
-div.botonApuntes{
-    
-    
 }
